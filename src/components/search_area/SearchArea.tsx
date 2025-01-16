@@ -43,7 +43,7 @@ function SearchArea() {
             className="flex items-start gap-3"
           >
             <div className="flex flex-col w-full">
-              <Input
+              <Input autoComplete="off"
                 {...register("user_name", {
                   required: "Username is required",
                 })}
