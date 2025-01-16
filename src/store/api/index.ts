@@ -1,9 +1,13 @@
 import { createApi, fetchBaseQuery, retry } from "@reduxjs/toolkit/query/react";
-import { API } from "../../hook/useEnv";
+import { API, TOKEN } from "../../hook/useEnv";
 
 const baseQuery = async (args: any, api: any, extraOptions: any) => {
   const rawBaseQuery = fetchBaseQuery({
     baseUrl: API,
+    prepareHeaders: (headers) => {
+      headers.set("Authorization", `Bearer ${TOKEN}`);
+      
+    },
   });
 
   const result = await rawBaseQuery(args, api, extraOptions);

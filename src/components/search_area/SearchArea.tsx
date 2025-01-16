@@ -33,7 +33,7 @@ function SearchArea() {
     <main>
       <Header/>
       <section className="flex items-center justify-center w-full h-screen bg-gray-100">
-        <div className="border rounded-md w-[37vw] p-5 flex flex-col gap-5 bg-white">
+        <div className="border rounded-md min-w-[37vw] max-w-[50vw] p-5 flex flex-col gap-5 bg-white">
           <h1 className="text-center font-bold text-2xl">
             GitHub Profile Viewer
           </h1>
