@@ -87,8 +87,8 @@ function SearchArea() {
               </div>
             </div>
           )}
-          {isLoading && (
-            <div className="flex border rounded-md p-7 items-start gap-5 animate-pulse">
+          {isLoading && name && (
+            <div className="flex border rounded-md p-7 w-full items-start gap-5 animate-pulse">
               <div className="rounded-full w-32 h-32 bg-gray-200"></div>
               <div>
                 <div className="h-6 bg-gray-200 rounded w-full mb-2"></div>
